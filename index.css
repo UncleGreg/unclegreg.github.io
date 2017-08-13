@@ -147,3 +147,7 @@ body {
 #instructions {
   text-align: center;
 }
+.correct {
+  background-color: green;
+  color: #fff;
+}
