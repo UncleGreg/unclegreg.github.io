@@ -164,6 +164,24 @@ body {
   padding: .5em;
 }
 
+
+.number{
+	width: calc(500px / 10);
+	height: calc(500px / 10);
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0;
+	cursor: pointer;
+	background-color: #1497D0;
+	color: #fff;
+	border: 1px solid #16497D;
+}
+.correct {
+  background-color: #16497D !important;
+  color: #fff;
+}
+
 #instructions {
   text-align: center;
 }
