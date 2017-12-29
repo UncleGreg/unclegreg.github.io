@@ -1,0 +1,798 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700);
+
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700);
+
+.page-landing {
+  background-image: url(img/73503c.jpg);
+}
+
+.landing-arrow {
+  background-image: url(img/77e413.svg);
+}
+
+.page-about {
+  background-image: url(img/4ba1b9.jpg);
+}
+
+.contact-wrap .contact-contact a.contact-phone:before {
+  background-image: url(img/6eb2a7.svg);
+}
+
+.contact-wrap .contact-contact a.contact-mail:before {
+  background-image: url(img/96a7b0.svg);
+}
+
+body,html {
+  padding: 0;
+  margin: 0;
+  font-family: Rubik,sans-serif;
+  background-color: #10213d;
+  font-size: 16px;
+}
+
+@media only screen and (max-width:1400px) {
+  body,  html {
+    font-size: 14px;
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+::-moz-selection {
+  background: #1a65e3;
+}
+
+::selection {
+  background: #1a65e3;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 3.5em;
+  margin-bottom: 60px;
+}
+
+.bg-header {
+  width: 100%;
+  height: 350px;
+  background-image: url("http://www.pypinformatica.com.ar/img/back_header_serv.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: hue-rotate(84deg);
+  opacity: .6;
+}
+
+.page-landing {
+  background-image: url(img/73503c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.page-landing__text {
+  width: 80%;
+}
+
+.page-landing__text h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.page-landing__text h3 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 400;
+}
+
+.action-text {
+  position: relative;
+  z-index: 2;
+}
+
+.action-text:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #1a65e3;
+  height: 34px;
+  width: 100%;
+  left: 13px;
+  bottom: 15px;
+  z-index: -1;
+}
+
+.landing-arrow {
+  width: 35px;
+  background-image: url(img/77e413.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 50px;
+}
+
+.landing-arrow:after {
+  content: "";
+  width: 37px;
+  height: 37px;
+  display: block;
+  border: 1px solid #fff;
+  opacity: .3;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  position: relative;
+  left: -2px;
+  top: -2px;
+}
+
+.page-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+
+.page-nav:after {
+  content: "";
+  display: block;
+  width: 0;
+  margin: 0 auto;
+  height: 1px;
+  transition: .4s;
+  background-image: radial-gradient(circle 548px at center,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.2) 20%,transparent 100%);
+}
+
+.page-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav ul li:first-of-type {
+  flex: 1;
+  padding-top: 20px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.page-nav ul li:first-of-type:hover {
+  border-color: transparent;
+}
+
+.page-nav ul li {
+  margin: 0 10px;
+  padding: 0 10px;
+  padding-top: 25px;
+  list-style: none;
+  border-top: 3px solid transparent;
+}
+
+.page-nav ul li:hover {
+  border-color: #1a65e3;
+}
+
+.page-nav ul li:hover a {
+  color: #1a65e3;
+}
+
+.page-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.page-nav #logo {
+  width: 160px;
+  transition: .4s;
+}
+
+.page-about {
+  background-image: url(img/4ba1b9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 10%;
+  margin: 0 auto;
+}
+
+.page-about__text {
+  margin-right: 50px;
+  max-width: 600px;
+}
+
+.page-about__text h2 {
+  font-size: 1.4em;
+}
+
+.page-about__text p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.page-about__action {
+  margin-top: 50px;
+}
+
+.button {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  background-color: #1a65e3;
+  box-shadow: 0 4px 16px 0 #0d2f56;
+  font-size: .8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #5273e3;
+}
+
+.button-contact {
+  margin-top: 40px;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.page-services {
+  background-color: #10213d;
+  background-image: linear-gradient(0deg,#0f1e3f 0,#10213d);
+  color: #fff;
+  position: relative;
+  padding: 100px 0;
+}
+
+.vertical-lines {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.vertical-lines>div {
+  flex: 1;
+  border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.vertical-lines>div:first-of-type {
+  border-left: 1px solid rgba(0,0,0,.2);
+}
+
+.services-title {
+  font-size: 3em;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.services-title:before {
+  content: "";
+  height: 3px;
+  width: 200px;
+  display: block;
+  position: absolute;
+  background-color: #1a65e3;
+  left: -210px;
+  top: 25px;
+}
+
+.grid-row {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+
+.grid-row.right {
+  justify-content: flex-end;
+}
+
+.services-grid {
+  width: 70%;
+  padding: 10% 0;
+  margin: 0 auto;
+}
+
+.services-grid__item {
+  width: 500px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.services-grid__item:hover .services-grid__image:after {
+  opacity: .4;
+}
+
+.services-grid__image {
+  background-image: url("http://www.pypinformatica.com.ar/img/img_2_home.jpg");
+  height: 300px;
+  width: 500px;
+  position: relative;
+  box-shadow: 0 6px 43px -2px #05081a;
+}
+
+.services-grid__image:after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #1a65e3;
+  height: 100%;
+  opacity: 0;
+  transition: .2s;
+}
+
+.services-grid__image:before {
+  content: attr(data-number);
+  position: absolute;
+  color: #1a65e3;
+  font-size: 6em;
+  font-weight: 700;
+  top: -.6em;
+  left: 10px;
+  opacity: .6;
+}
+
+.services-grid__title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+  top: -25px;
+  left: 10px;
+  font-size: 2.5em;
+  text-shadow: 0 6px 43px -2px #05081a;
+  background-color: #1a65e3;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.services-grid__title:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #1a65e3;
+  height: 34px;
+  width: 100%;
+  top: 19px;
+  z-index: -1;
+  opacity: 0;
+  right: -200px;
+  transition: all .4s ease;
+}
+
+.services-grid__text {
+  font-size: 1.2em;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+.services-button {
+  padding: 20px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.services-button:before {
+  content: "";
+  height: 120px;
+  width: 3px;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  top: -140px;
+  opacity: .4;
+  left: 50%;
+}
+
+.services-button a {
+  left: calc(50% - 125px);
+  position: relative;
+}
+
+.page-contact {
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  background-image: radial-gradient(circle 288px at center,#10213d 0,#10213d 47%,#10213d 100%);
+}
+
+.page-contact p {
+  font-size: 1.6em;
+  margin-bottom: 60px;
+}
+
+.page-contact .contact-link {
+  color: #fff;
+  font-size: 1.8em;
+  text-decoration: none;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-contact .contact-link:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #1a65e3;
+  height: 34px;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  right: -200px;
+  transition: all .4s ease;
+}
+
+.page-contact .contact-link:hover:after {
+  opacity: 1;
+  right: 0;
+}
+
+.side-nav {
+  right: 10%;
+  transform: rotate(90deg) translateY(-50%);
+  top: 50%;
+  z-index: 1;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.side-nav,.side-nav:after {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.side-nav:after {
+  content: attr(data-text);
+  right: 50%;
+  top: -65px;
+  transform: translateX(50%);
+  font-size: 8em;
+  opacity: .05;
+  z-index: -1;
+}
+
+.services-wrap {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services-header,.services-wrap {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services-header {
+  color: #fff;
+}
+
+.services-header h1 {
+  padding: 200px 60px 30px;
+  border: 5px solid #1a65e3;
+  display: inline-block;
+  position: relative;
+  top: -150px;
+  font-size: 3em;
+  margin-left: 5%;
+  text-transform: uppercase;
+}
+
+.services-header h2 {
+  font-weight: 300;
+  max-width: 600px;
+  padding: 30px;
+}
+
+.services-item {
+  width: calc(100% / 2 - 60px);
+  color: #fff;
+  text-decoration: none;
+  margin: 30px;
+}
+
+.services-item:hover .services-item__image:after {
+  opacity: .4;
+}
+
+.services-item__image {
+  background-image: url("http://www.pypinformatica.com.ar/img/img_2_home.jpg");
+  height: 250px;
+  max-width: 450px;
+  position: relative;
+  box-shadow: 0 6px 43px -2px #05081a;
+}
+
+.services-item__image:after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #1a65e3;
+  height: 100%;
+  opacity: 0;
+  transition: .2s;
+}
+
+.services-item__image:before {
+  content: attr(data-number);
+  position: absolute;
+  color: #1a65e3;
+  font-size: 6em;
+  font-weight: 700;
+  top: -.6em;
+  left: 10px;
+  opacity: .6;
+}
+
+.services-item__title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+  top: -25px;
+  left: 10px;
+  font-size: 2.5em;
+  text-shadow: 0 6px 43px -2px #05081a;
+  background-color: #1a65e3;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.services-item__title:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #1a65e3;
+  height: 34px;
+  width: 100%;
+  top: 19px;
+  z-index: -1;
+  opacity: 0;
+  right: -200px;
+  transition: all .4s ease;
+}
+
+.services-item__text {
+  font-size: 1.2em;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+.page-footer {
+  height: 300px;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-footer:before {
+  content: "";
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  background-image: radial-gradient(circle 548px at center,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.2) 20%,transparent 100%);
+}
+
+.page-footer__links {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page-footer__links div:first-of-type {
+  margin-right: 40px;
+  align-self: center;
+}
+
+.page-footer__links div {
+  flex: 1;
+}
+
+.page-footer__links div h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.page-footer__links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer__links ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: .9em;
+  opacity: .8;
+  transition: .2s;
+}
+
+.page-footer__links ul li:hover {
+  opacity: 1;
+}
+
+.page-footer__links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-footer__links #logo {
+  width: 160px;
+}
+
+.footer-bottom {
+  display: flex;
+  padding: 10px 10%;
+  font-size: .9em;
+  background-color: rgba(0,0,0,.3);
+  justify-content: space-between;
+  opacity: .7;
+}
+
+.contact-form {
+  width: 400px;
+  margin-left: auto;
+}
+
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__form input,.contact-form__form textarea {
+  margin: 8px 0 25px;
+  border: 2px solid hsla(0,0%,100%,.2);
+  border-radius: 4px;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.contact-form__form input:focus,.contact-form__form textarea:focus {
+  background-color: hsla(0,0%,100%,.05);
+}
+
+.contact-form__form input:invalid,.contact-form__form textarea:invalid {
+  box-shadow: none;
+  border-color: rgba(255,0,0,.6);
+}
+
+.contact-form__form .button {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  background-color: #1a65e3;
+  box-shadow: 0 4px 16px 0 #0d2f56;
+  font-size: .8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-color: transparent;
+}
+
+.contact-form__form .button:hover {
+  cursor: pointer;
+  background-color: #5273e3;
+}
+
+.contact-wrap {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-wrap .contact-text p {
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.contact-wrap p {
+  max-width: 400px;
+}
+
+.contact-wrap .contact-contact a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 35px;
+}
+
+.contact-wrap .contact-contact a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.contact-wrap .contact-contact a.contact-phone:before {
+  background-image: url(img/6eb2a7.svg);
+}
+
+.contact-wrap .contact-contact a.contact-mail:before {
+  background-image: url(img/96a7b0.svg);
+}
+
+.contact-title {
+  font-size: 2em;
+  position: relative;
+}
+
+.contact-title:before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 120px;
+  position: absolute;
+  left: -150px;
+  background-color: #1a65e3;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-menu {
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.services-title2 {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.services-title2 h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1a65e3;
+}
+
+.services-title2 h4 {
+  font-weight: 300;
+  font-size: 3em;
+  margin-top: 0;
+}
