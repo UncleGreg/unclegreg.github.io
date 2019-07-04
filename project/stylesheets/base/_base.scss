@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.project-overlay{
+	background-image: url('../../assets/desktop.png');
+	//background-image: url('../../assets/tablet.png');
+	//background-image: url('../../assets/mob-s.png');
+	//background-image: url('../../assets/menu-m.png');
+	background-size: 1904px auto;
+	//background-size: 320px auto;
+	//background-size: 320px auto;
+	background-position: center -2px;
+	width: 100%;
+	height: 4500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: .5;
+	pointer-events: none;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  font-family: $text-font-stack;
+}
+
+h1,h2,h3,h4,h5{
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+

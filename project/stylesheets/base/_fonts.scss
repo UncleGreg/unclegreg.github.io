@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Millunium Medium';
+  src:  url('#{$base-url}fonts/Millunium Medium/Millunium-Medium.woff2') format('woff2'),
+        url('#{$base-url}fonts/Millunium Medium/Millunium-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family : 'Raleway';
+	src:  url('#{$base-url}fonts/Raleway/Raleway-Regular.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family : 'Raleway';
+	src:  url('#{$base-url}fonts/Raleway/Raleway-SemiBold.ttf');
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family : 'Raleway';
+	src:  url('#{$base-url}fonts/Raleway/Raleway-Bold.ttf');
+	font-style: normal;
+	font-weight: 600;
+}
